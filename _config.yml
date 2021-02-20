@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "Summer"
-  avatar           : /assets/images/bio-summer.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/bio-summer.PNG # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Studying **Swift**&**iOS**"
   location         : "Republic of Korea"
   email            :
