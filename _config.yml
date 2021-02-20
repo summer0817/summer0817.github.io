@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "Summer"
   avatar           : /assets/images/bio-summer.PNG # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Studying **Swift**&**iOS**"
+  bio              : "Studying **Swift** & **iOS**"
   location         : "Republic of Korea"
   email            :
   links:
