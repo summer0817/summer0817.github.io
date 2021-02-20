@@ -19,7 +19,7 @@ title                    : "Summer's blog"
 title_separator          : "-"
 subtitle                 : "Swift & iOS" # site tagline that appears below site title in masthead
 name                     : "Summer"
-description              : "Studying to become an iOS developer"
+description              : "Studying Swift & iOS"
 url                      : "https://summer0817.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -29,9 +29,9 @@ masthead_title           : "Today I Learned" # overrides the website title displ
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "summer0817.github.io" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
