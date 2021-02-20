@@ -15,7 +15,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Summer blog"
+title                    : "Summer's blog"
 title_separator          : "-"
 subtitle                 : "Swift & iOS" # site tagline that appears below site title in masthead
 name                     : "Summer"
