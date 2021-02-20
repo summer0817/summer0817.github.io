@@ -1,13 +1,15 @@
 # main links
 main:
+  - title: "Home"
+    url: /index.html
   - title: "Category"
-    url: /category/
+    url: /categories/
   - title: "Tag"
-    url: /tag/
+    url: /tags/
 #  - title: "About"
 #    url: /about/
   - title: "Post by Year"
-    url: /post/
+    url: /posts/
     
   #- title: "Quick-Start Guide"
   # url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
