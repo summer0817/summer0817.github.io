@@ -1,5 +1,5 @@
 ---
-title: "Github blog"
+title: "swift"
 layout: archive
 permalink: categories/swift
 author_profile: true
