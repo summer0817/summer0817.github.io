@@ -35,27 +35,21 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Programmers" %}
-                        <li><a href="/categories/programmers" class="">프로그래머스 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
         <span class="nav__sub-title">etc</span>
+             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Git" %}
                         <li><a href="/categories/git" class="">Git & Github ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
+        <ul>
+           {% for category in site.categories %}
                     {% if category[0] == "blog" %}
-                        <li><a href="/categories/blog" class="">blog ({{category[1].size}})</a></li>
+                       <li><a href="/categories/blog" class="">blog dev ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul> 
+            </ul>
       </li>
   </ul>
 </nav>
