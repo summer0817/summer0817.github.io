@@ -14,8 +14,8 @@
         <span class="nav__sub-title">Swift</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Swift" %}
-                        <li><a href="/categories/swift" class="">Swift({{category[1].size}})</a></li>
+                    {% if category[0] == "swift" %}
+                        <li><a href="/categories/swift" class="">swift({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
