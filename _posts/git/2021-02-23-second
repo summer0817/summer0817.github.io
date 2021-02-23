@@ -102,9 +102,3 @@ git clone만 하고 git push하면 본인 원격저장소로만 업로드된다.
 
 *source* Googling [link1](https://youtu.be/vGRISKOIS-w)[link2](https://youtu.be/_n0ghzo8qD0)
 [link3](https://youtu.be/0RqbZt_TZkY)
-
----
-## **오늘의 한 줄 정리**
-* 학습 내용: 터미널을 이용한 Git 사용법 및 Git branch conflict 해결
-* 문제점/고민한 점: Git branch의 개념과 conflict 해결방법
-* 해결 방법: 1기 선배님들의 지혜와 구글링(문제점/고민한 점 링크 참조)
