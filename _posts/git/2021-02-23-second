@@ -1,0 +1,110 @@
+---
+title:  "Git & GitHub"
+excerpt: "Git & GitHub with Terminal"
+categories: 
+  - git
+tags:
+  - git
+  - github
+  - terminal
+  - command
+toc: true
+toc_sticky: true
+toc_label: Contents
+---
+#  Git & GitHub with Terminal
+## **학습내용**
+### Git & GitHub
+* Git : 변경이력을 저장할 수 있는 툴
+* GitHub :  이 툴을 가지고 내 로컬에서 뿐만 아니고 서버를 제공해줘서 여러명이 같이 작업을 하거나 내가 백업 용도로 사용할 수 있는 서버를 제공하는 곳, git을 사용할 수 있게 도와주는 서비스 중에 하나
+### Terminal command line
+|Terminal command|function|
+|--|:--|
+|mkdir|make directory|
+|touch|make file|
+|rm|Remove files|
+|rmdir|Remove folder(s)|
+|pwd|Print Working Directory|
+|cd|Change Directory|
+|ls|List information about file(s)|
+|open|Open a file in its default application|
+|clear|Clear terminal screen|
+
+* ~ 표시:  사용자의 홈폴더
+* vi README.md리드미파일 수정
+
+*source* Googling [link](https://ss64.com/bash/)
+
+---
+### git 명령어
+|git 명령어|기능|
+|--|--|
+|git init|git 초기화|
+|git status|git 상태: 미완료 commit 확인 가능|
+|git config —global|커밋전 환경설정: 사용자이름, 이메일주소|
+|git add|추적하기 위해 준비|
+|git commit|commit: 일종의 도장찍는 행위|
+|git commit -m “커밋메세지”|commit + 기록메세지|
+|git log |commit 상세내용 확인|
+|git diff|어떤 파일이 어떤 변화가 있었는지 확인 | 
+|git clone|복제하기|
+
+* 기타 
+    * i를 누르면 insert 상태로 변경이 됨 
+    * 맥북의 Finder에서는 파일명 클릭하신 상태에서 Enter 키 누르시면 파일명 변경 가능 
+    * gitignore: 쓸데없는 파일은 변경기록에 남길 필요가 없음  
+        * git status 치면 git 이 안내조차 하지 않음
+____
+### git 공간 설명
+* Work directory 실제 작업하는 공간 
+* Stage Area 는 Index : add한 곳, Git 변경이력을 관리하는 부분 일종의 준비구역
+* Repository : 변경이력을 저장한 저장소
+* 저장소: log가 남는 저장소
+* Local Repository : 외부에 위치하지 않고 작업하고 있는 내부 컴퓨터에 존재, git log해서 작업을 남기는 공간 log(기록으로 생각하면 될 듯) 인터넷이 없어도 상관없음
+* Remote Repository : 외부 서버에 위치하여 변경 이력을 기록하는 부분, 다중 사용자로부터 관리되는 각 로컬 저장소의 접점
+---
+### git branch 명령어 정리
+* git checkout -b 브랜치명 (git branch 브랜치명 기능과 git checkout 브랜치명 기능을 합친 명령어 = 체크아웃하면서 브랜치를 만들어달라는 뜻)
+* git branch 가지의 목록들을 보여줌
+* git branch 하면 지금 해당하는 브랜치 앞에 * 로 표시해준다
+* git branch 브랜치명 가지(브랜치)를 하나 만들었음
+* git checkout 브랜치명 가지(브랜치)로 갈아탑니다.
+* git checkout master 마스터 브랜치로 돌아가기
+* git branch -D 브랜치명 해당 branch 삭제하기
+
+*source* Googling [link](https://rogerdudler.github.io/git-guide/index.ko.html)
+
+---
+## **문제점 / 고민한 점 => 해결방법**
+* -t 옵션으로 추적 옵션 주는 git checkout -t origin/해당 브랜치 이름 :   해당 브랜치 이름은 fork해온 저장소에서 검색 가능
+    * clone 하고자하는 저장소가서 Fork 
+    * 본인 저장소 코드를 클릭후 복사한 url을 터미널에 git clone + 복사한 url 터미널 명령어 입력
+    * cd 명령어로 clone되어 생긴 해당 폴더로 이동
+    * fork해온 저장소 가서 All branches 에서 브랜치 이름 확인  
+    (로컬에는 메인 브런치만 있기 때문에 remote저장소에 해당 브랜치이름을 추적하는 로컬브렌치를 생성해야 한다.)
+* conflict의 원인
+    * 각자 같은 파일명 같은 위치 코드를 상이하게 수정하여 merge 시도해서 충돌 발생
+* conflict의 해결방법
+    * conflict되면 자동merge가 불가하므로 파일을 열어 수동으로 코드 수정을 해줘야한다. (conflict 수정내용 중 택 1)
+* 터미널에서 git log에 들어가서 명령어 입력으로 다시 나오지 못했음
+    * q 로 나가기
+* merge 헷갈리지 않는 법
+    * 수신할 브런치(master)에서 merge해야 한다.
+* pull requests를 하려면 fork한 후 git clone을 해야한다.   
+git clone만 하고 git push하면 본인 원격저장소로만 업로드된다.   
+* pull requests는 깃허브 웹페이지에서 가능
+* pull requests 버튼 위치
+    * pull requests 위치는 한 군데만 있는 것이 아니다  
+    Pull requests 클릭 후 New pull request 클릭
+    * Github 웹페이지 버튼 위치 익숙해지기  
+    code ->overview->your branches->new pull request
+* 이미 상대방에 의해서 merge가 된 상태이면 commit 추가할때 다시 PR을 보내야한다.
+
+*source* Googling [link1](https://youtu.be/vGRISKOIS-w)[link2](https://youtu.be/_n0ghzo8qD0)
+[link3](https://youtu.be/0RqbZt_TZkY)
+
+---
+## **오늘의 한 줄 정리**
+* 학습 내용: 터미널을 이용한 Git 사용법 및 Git branch conflict 해결
+* 문제점/고민한 점: Git branch의 개념과 conflict 해결방법
+* 해결 방법: 1기 선배님들의 지혜와 구글링(문제점/고민한 점 링크 참조)
